@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colophon Works</title>
+<meta name="description" content="Tools for writers using AI. They run on your own computer.">
+<meta property="og:title" content="Colophon Works">
+<meta property="og:description" content="Tools for writers using AI. They run on your own computer.">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --ink:        #1a1714;
+    --ink-soft:   #4a443d;
+    --paper:      #faf7f2;
+    --paper-alt:  #f2ede4;
+    --rule:       #ddd5c8;
+    --accent:     #7a3b1d;
+    --measure:    34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink:       #e8e2d8;
+      --ink-soft:  #a89f92;
+      --paper:     #16140f;
+      --paper-alt: #1e1b15;
+      --rule:      #38332a;
+      --accent:    #d08a5c;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.62 Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  }
+  .wrap { max-width: var(--measure); margin: 0 auto; padding: 0 1.4rem; }
+
+  header { padding: 4.5rem 0 2.2rem; }
+  h1 {
+    font-size: 2.1rem;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.6rem;
+    font-weight: normal;
+  }
+  .colophon {
+    color: var(--ink-soft);
+    font-size: 0.94rem;
+    font-style: italic;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 0.78rem;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: var(--ink-soft);
+    margin: 3.2rem 0 0.9rem;
+  }
+  section:first-of-type h2 { margin-top: 1rem; }
+
+  p { margin: 0 0 1.15rem; }
+
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+
+  hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 3.4rem 0 0;
+  }
+
+  ul.shipped { list-style: none; padding: 0; margin: 0; }
+  ul.shipped li {
+    padding: 0.85rem 0;
+    border-top: 1px solid var(--rule);
+  }
+  ul.shipped li:last-child { border-bottom: 1px solid var(--rule); }
+  ul.shipped .name { font-weight: bold; }
+  ul.shipped .what {
+    display: block;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    margin-top: 0.15rem;
+  }
+
+  footer {
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+    padding: 2.4rem 0 4rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Colophon Works</h1>
+    <p class="colophon">A colophon is the printer's note at the back of a book, saying how it was made.</p>
+  </header>
+
+  <section>
+    <h2>Tools for writers using AI</h2>
+    <p>Everything here runs on your own computer. They carry an Open Source license.</p>
+    <ul class="shipped">
+      <li>
+        <a class="name" href="https://github.com/tadelstein9/md-in-chrome">md-in-chrome</a>
+        <span class="what">Open a markdown file in Chrome and read it the way it is meant to look. Fix a sentence while you are looking at it. Save writes an edit copy and leaves the original alone. Words you replaced stay on the page in red with a line through them, so the next reader sees what changed.</span>
+      </li>
+      <li>
+        <a class="name" href="https://github.com/tadelstein9/naturalizer">naturalizer</a>
+        <span class="what">If you're writing with AI, detectors count every "AI tell" as a crime. I ran a detector against 105 articles I wrote for Linux Journal in the mid 2000's and the detector markeed everyone as machine language. I wrote those 13 years before the release of ChatGPT. One em dash and they count a hit, as if a writer never uses one. This tool scores against you. It counts how often you do those things in work you already published. What sits inside your range is you. What sits above it is worth a look.</span>
+      </li>
+      <li>
+        <a class="name" href="https://github.com/tadelstein9/overlap-check">overlap-check</a>
+        <span class="what">Find out if you use repetious terms in your documents. The same words in two files you already wrote. One chapter against another, or a draft against a research folder.</span>
+      </li>
+      <li>
+        <a class="name" href="https://github.com/tadelstein9/eos">eos</a>
+        <span class="what">Five skills that turn a working session into a document your team can read, then check that document against what happened.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>How to reach me</h2>
+    <p>I write at <a href="https://tomadelstein.substack.com">Advance</a>, on Substack. Reply to anything there and it reaches me.</p>
+  </section>
+
+  <hr>
+
+  <footer>
+    <p>Colophon Works — Tom Adelstein.</p>
+  </footer>
+
+</div>
+</body>
+</html>
